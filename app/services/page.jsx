@@ -26,7 +26,7 @@ const services = [
     num: "04",
     title: "SEO",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
-    href: ""
+    href: "https://github.com/NonimUdara"
   },
 ];
 
@@ -60,7 +60,7 @@ const Services = () => {
                   </div>
                   <Link href={service.href} className="w-[70px] h-[70px] rounded-full 
                   bg-white group-hover:bg-accent transition-all duration-500 flex 
-                  justify-center items-center hover:-rotate-45 "
+                  justify-center items-center hover:-rotate-45"
                   >
                     <BsArrowDownRight className="text-primary text-3xl" />
                   </Link>
