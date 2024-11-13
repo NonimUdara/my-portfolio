@@ -11,8 +11,6 @@ import {
 
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 
-//comment
-
 // about date
 const about = {
   title: "About me",
