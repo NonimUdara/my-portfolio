@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
-
+//kk
 // about date
 const about = {
   title: "About me",
