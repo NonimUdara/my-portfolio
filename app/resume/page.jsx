@@ -14,38 +14,38 @@ import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 // about date
 const about = {
   title: "About me",
-  describe: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
   info: [
     {
-      fieldname: "Name",
+      fieldName: "Name",
       fieldValue: "Nonim Udara"
     },
     {
-      fieldname: "Phone",
+      fieldName: "Phone",
       fieldValue: "1111111111"
     },
     {
-      fieldname: "Experience",
+      fieldName: "Experience",
       fieldValue: "3+ years"
     },
     {
-      fieldname: "Skype",
+      fieldName: "Skype",
       fieldValue: "nonim.01"
     },
     {
-      fieldname: "Nationality",
+      fieldName: "Nationality",
       fieldValue: "Sri Lankan"
     },
     {
-      fieldname: "Email",
+      fieldName: "Email",
       fieldValue: "nonimudara123@gmail.com"
     },
     {
-      fieldname: "Freelancer",
+      fieldName: "Freelancer",
       fieldValue: "Available"
     },
     {
-      fieldname: "Languages",
+      fieldName: "Languages",
       fieldValue: "English, Sinhala"
     },
   ]
@@ -306,8 +306,23 @@ const Resume = () => {
             </TabsContent>
 
             {/* about */}
-            <TabsContent value="about" className="w-full">
-              about
+            <TabsContent value="about" className="w-full text-center xl:text-left">
+              <div className="flex flex-col gap-[30px]">
+                <h3 className="text-4xl font-bold">{about.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
+                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] 
+                mx-auto xl:mx-0">
+                  {about.info.map((item, index) => {
+                    return(
+                      <li key={index} className="flex items-center justify-center 
+                      xl:justify-start gap-4">
+                        <span className="text-white/60">{item.fieldName}</span>
+                        <span className="text-xl">{item.fieldValue}</span>
+                      </li>
+                    )
+                  })}
+                </ul>
+              </div>
             </TabsContent>
           </div>
         </Tabs>
