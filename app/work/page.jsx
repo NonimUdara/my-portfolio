@@ -29,7 +29,29 @@ const projects = [
     image: 'assets/work/thumb1.png',
     live: "",
     github: "",
-  }
+  },
+  {
+    num: "02",
+    category: "fullstack",
+    title: "project 2",
+    description:
+    "Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. ",
+    stack: [{name: "Next.js"}, {name: "Tailwind.css"}, {name: "Node.js"}],
+    image: 'assets/work/thumb2.png',
+    live: "",
+    github: "",
+  },
+  {
+    num: "03",
+    category: "frontend",
+    title: "project 3",
+    description:
+    "Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. ",
+    stack: [{name: "Next.js"}, {name: "Tailwind.css"}],
+    image: 'assets/work/thumb3.png',
+    live: "",
+    github: "",
+  },
 ]
 
 const Work = () => {
