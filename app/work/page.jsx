@@ -34,7 +34,7 @@ const projects = [
 
 const Work = () => {
   return (
-    <div>work page</div>
+    <div className="text-center">work page</div>
   )
 }
 
