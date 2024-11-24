@@ -32,8 +32,6 @@ const projects = [
   }
 ]
 
-//comment
-
 const Work = () => {
   return (
     <div className="text-center">work page</div>
