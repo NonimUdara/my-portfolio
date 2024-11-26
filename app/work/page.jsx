@@ -15,6 +15,8 @@ import {
   TooltipTrigger
 } from "@/components/ui/tooltip";
 
+import WorkSliderBtns from "@/components/WorkSliderBtns";
+
 import Link from "next/link";
 import Image from "next/image";
 
@@ -26,7 +28,7 @@ const projects = [
     description:
       "Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. ",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "JavaScript" }],
-    image: 'assets/work/thumb1.png',
+    image: '/assets/work/thumb1.png',
     live: "",
     github: "",
   },
@@ -37,7 +39,7 @@ const projects = [
     description:
       "Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. ",
     stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Node.js" }],
-    image: 'assets/work/thumb2.png',
+    image: '/assets/work/thumb2.png',
     live: "",
     github: "",
   },
@@ -48,7 +50,7 @@ const projects = [
     description:
       "Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. ",
     stack: [{ name: "Next.js" }, { name: "Tailwind.css" }],
-    image: 'assets/work/thumb3.png',
+    image: '/assets/work/thumb3.png',
     live: "",
     github: "",
   },
@@ -67,7 +69,14 @@ const Work = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      animate={{ 
+        opacity: 1,
+        transition: {
+          delay: 2.4,
+          duration: 0.4,
+          ease: "easeIn",
+        },
+       }}
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
       <div className="container mx-auto">
@@ -151,11 +160,27 @@ const Work = () => {
             >
               {projects.map((project, index) => {
                 return (
-                  <SwiperSlide key={index}>
-                    slide
+                  <SwiperSlide key={index} className="w-full">
+                    <div className="h-[460px] relative group flex justify-center 
+                    items-center bg-pink-50/20">
+                      {/* overlay */}
+                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 
+                      z-10"></div>
+                      {/* image */}
+                      <div className="relative w-full h-full">
+                        <Image
+                          src={project.image}
+                          fill
+                          className="object-cover"
+                          alt=""
+                        />
+                      </div>
+                    </div>
                   </SwiperSlide>
                 )
               })}
+              {/* slider buttons */}
+              <WorkSliderBtns />
             </Swiper>
           </div>
         </div>
