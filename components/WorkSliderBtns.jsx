@@ -11,14 +11,12 @@ const WorkSliderBtns = ({ containerStyles, btnStyles, iconsStyles }) => {
       <button
         className={btnStyles}
         onClick={() => swiper.slidePrev()}
-        aria-label="Previous Slide"
       >
         <FaChevronLeft className={iconsStyles} />
       </button>
       <button
         className={btnStyles}
         onClick={() => swiper.slideNext()}
-        aria-label="Next Slide"
       >
         <FaChevronRight className={iconsStyles} />
       </button>
