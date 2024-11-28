@@ -12,13 +12,13 @@ const Home = () => {
     const cvUrl = "/resume.pdf"; // URL of the CV file in the public directory
 
     // Open the document in a new tab
-    window.open(cvUrl, "_blank");
+    // window.open(cvUrl, "_blank");
 
     // Trigger the download
-    // const link = document.createElement("a");
-    // link.href = cvUrl;
-    // link.download = "Nonim_Udara_CV.pdf"; // Desired downloaded file name
-    // link.click();
+    const link = document.createElement("a");
+    link.href = cvUrl;
+    link.download = "Nonim_Udara_CV.pdf"; // Desired downloaded file name
+    link.click();
   };
 
   return (
