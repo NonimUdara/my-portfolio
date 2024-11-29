@@ -10,7 +10,7 @@ import Stats from "@/components/Stats";
 const Home = () => {
   const handlePreviewAndDownloadCV = () => {
     const cvUrl = "/resume.pdf"; // URL of the CV file in the public directory
-//aa
+
     // Open the document in a new tab
     // window.open(cvUrl, "_blank");
 
