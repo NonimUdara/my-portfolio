@@ -48,8 +48,8 @@ const Home = () => {
               </Button>
               <div className="mb-8 xl:mb-0">
                 <Social containerStyles="flex gap-6" iconStyles="w-9 h-9 border border-accent rounded-full flex
-                justify-center items-center text-accent text-base hover:bg-accent
-                hover:text-primary hover:transition-all duration-500" />
+                justify-center items-center text-base bg-primary hover:bg-white
+                hover:border-primary hover:transition-all duration-500" />
               </div>
             </div>
           </div>
