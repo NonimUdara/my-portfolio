@@ -11,7 +11,7 @@ const Header = () => {
             <div className="container mx-auto flex justify-between items-center">
                 {/* Logo */}
                 <Link href="/">
-                    <div class="flex items-center justify-center gap-2">
+                    <div className="flex items-center justify-center gap-2">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
