@@ -40,10 +40,10 @@ const about = {
       fieldName: "Email",
       fieldValue: "nonimudara123@gmail.com"
     },
-    // {
-    //   fieldName: "Freelancer",
-    //   fieldValue: "Available"
-    // },
+    {
+      fieldName: "Freelancer",
+      fieldValue: "Available"
+    },
     {
       fieldName: "Languages",
       fieldValue: "English, Sinhala"
@@ -97,39 +97,22 @@ const education = {
   description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
   items: [
     {
-      institution: "Online Course Platform",
-      degree: "Full Stack Web Development Bootcamp",
-      duration: "2023",
+      institution: "MR / Vijitha Central College",
+      degree: "G.C.E. Ordinary Level Examination",
+      pharagraph: "Subject including ICT",
+      duration: "2015",
     },
     {
-      institution: "Codecademy",
-      degree: "Front-end Track",
-      duration: "2022",
+      institution: "ST . Servatius College Matara",
+      degree: " G.C.E Advanced Level Examination",
+      pharagraph: "Physical Science Stream",
+      duration: "2018",
     },
     {
-      institution: "Online Course",
-      degree: "Programming Course",
-      duration: "2020 - 2021",
-    },
-    {
-      institution: "Tech Institute",
-      degree: "Certified Web Developer",
-      duration: "2019",
-    },
-    {
-      institution: "Tech Institute",
-      degree: "Certified Web Developer",
-      duration: "2019",
-    },
-    {
-      institution: "Design School",
-      degree: "Diploma in Graphic Design",
-      duration: "2016 - 2018",
-    },
-    {
-      institution: "Community College",
-      degree: "Associate Degree in Computer Science",
-      duration: "2014 - 2016",
+      institution: "NSBM affiliated with University of Plymouth",
+      degree: "BSc (Hons) in Software Engineering",
+      pharagraph: "Awarded: Second Class Honours (Upper Division)",
+      duration: "2020 - 2023",
     },
   ],
 };
@@ -252,18 +235,22 @@ const Resume = () => {
                       return (
                         <li
                           key={index}
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl 
+                          className="bg-[#232329] h-[300px] py-6 px-10 rounded-xl 
                         flex flex-col justify-center items-center lg:items-start
                         gap-1"
                         >
                           <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px]
+                          <h3 className="text-xl max-w-auto min-h-[60px]
                           text-center lg:text-left">{item.degree}</h3>
-                          <div className="flex items-center gap-3">
+                          <h3 className="text-xl max-w-auto min-h-[60px]
+                          text-center lg:text-left">{item.pharagraph}</h3>
+                          <div className="flex items-start gap-3">
                             {/* dot */}
-                            <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                            <span className="w-[6px] h-[6px] rounded-full bg-accent mt-[12px]"></span>
                             <p className="text-white/60">{item.institution}</p>
                           </div>
+
+
                         </li>
                       )
                     })}
@@ -310,10 +297,10 @@ const Resume = () => {
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
-                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] 
+                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[750px] 
                 mx-auto xl:mx-0">
                   {about.info.map((item, index) => {
-                    return(
+                    return (
                       <li key={index} className="flex items-center justify-center 
                       xl:justify-start gap-4">
                         <span className="text-white/60">{item.fieldName}</span>
