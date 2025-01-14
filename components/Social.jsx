@@ -4,8 +4,8 @@ import { FaGithub, FaLinkedinIn, FaYoutube, FaTwitter } from "react-icons/fa";
 const socials = [
     { icon: <FaGithub />, path: "https://github.com/NonimUdara", textColor: "text-white hover:text-black" },
     { icon: <FaLinkedinIn />, path: "https://linkedin.com", textColor: "text-blue-700" },
-    { icon: <FaYoutube />, path: "https://youtube.com", textColor: "text-red-600" },
-    { icon: <FaTwitter />, path: "https://twitter.com", textColor: "text-blue-400" },
+    { icon: <FaYoutube />, path: "https://www.youtube.com/@nonimudara5933", textColor: "text-red-600" },
+    { icon: <FaTwitter />, path: "https://x.com/Nonim_Udara", textColor: "text-blue-400" },
 ];
 
 const Social = ({ containerStyles, iconStyles }) => {
