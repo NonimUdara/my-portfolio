@@ -22,16 +22,16 @@ const about = {
     },
     {
       fieldName: "Phone",
-      fieldValue: "1111111111"
+      fieldValue: "+94 76 116 5455"
     },
     {
       fieldName: "Experience",
       fieldValue: "3+ years"
     },
-    {
-      fieldName: "Skype",
-      fieldValue: "nonim.01"
-    },
+    // {
+    //   fieldName: "Skype",
+    //   fieldValue: "nonim.01"
+    // },
     {
       fieldName: "Nationality",
       fieldValue: "Sri Lankan"
@@ -40,10 +40,10 @@ const about = {
       fieldName: "Email",
       fieldValue: "nonimudara123@gmail.com"
     },
-    {
-      fieldName: "Freelancer",
-      fieldValue: "Available"
-    },
+    // {
+    //   fieldName: "Freelancer",
+    //   fieldValue: "Available"
+    // },
     {
       fieldName: "Languages",
       fieldValue: "English, Sinhala"
