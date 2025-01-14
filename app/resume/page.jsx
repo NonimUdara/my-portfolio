@@ -58,35 +58,36 @@ const experience = {
   description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
   items: [
     {
-      company: "Tech Solutions Inc.",
-      position: "Full Stack Developer",
-      duration: "2022-Present",
+      company: "Donext | Ambalangoda, Southern Province, Sri Lanka",
+      position: "Intern",
+      duration: "2024 July - present",
+      pharagraph:"Developed and deployed full-stack web applications using Next.js, React, TypeScript, Tailwind CSS, and PostgreSQL. My projects include Learning Management System, LK Model Zone, Potimate, and contributions to various other projects, showcasing expertise in building responsive, high-performance websites and applications."
     },
-    {
-      company: "Web Design Studio",
-      position: "Front-end Developer Intern",
-      duration: "Summer 2021",
-    },
-    {
-      company: "E-commerce Startup",
-      position: "Freelance Web Developer",
-      duration: "2020 - 2021",
-    },
-    {
-      company: "Tech Academy",
-      position: "Teaching Assistant",
-      duration: "2019 - 2020",
-    },
-    {
-      company: "Digital Agency",
-      position: "UI/UX Designer",
-      duration: "2018 - 2019",
-    },
-    {
-      company: "Software Development Firm",
-      position: "Junior Developer",
-      duration: "2017 - 2018",
-    },
+    // {
+    //   company: "Web Design Studio",
+    //   position: "Front-end Developer Intern",
+    //   duration: "Summer 2021",
+    // },
+    // {
+    //   company: "E-commerce Startup",
+    //   position: "Freelance Web Developer",
+    //   duration: "2020 - 2021",
+    // },
+    // {
+    //   company: "Tech Academy",
+    //   position: "Teaching Assistant",
+    //   duration: "2019 - 2020",
+    // },
+    // {
+    //   company: "Digital Agency",
+    //   position: "UI/UX Designer",
+    //   duration: "2018 - 2019",
+    // },
+    // {
+    //   company: "Software Development Firm",
+    //   position: "Junior Developer",
+    //   duration: "2017 - 2018",
+    // },
   ],
 };
 
@@ -197,18 +198,19 @@ const Resume = () => {
                   {experience.description}
                 </p>
                 <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                  <ul className="grid grid-cols-1 lg:grid-cols-1 gap-[30px]">
                     {experience.items.map((item, index) => {
                       return (
                         <li
                           key={index}
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl 
+                          className="bg-[#232329] h-[350px] w-[730px] py-6 px-10 rounded-xl 
                         flex flex-col justify-center items-center lg:items-start
                         gap-1"
                         >
                           <span className="text-accent">{item.duration}</span>
                           <h3 className="text-xl max-w-[260px] min-h-[60px]
-                          text-center lg:text-left">{item.position}</h3>
+                          text-center lg:text-left mb-[-30px]">{item.position}</h3>
+                          <p className="text-white/60">{item.pharagraph}</p>
                           <div className="flex items-center gap-3">
                             {/* dot */}
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
