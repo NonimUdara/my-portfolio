@@ -14,7 +14,7 @@ import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 // about date
 const about = {
   title: "About me",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+  description: "I am a motivated and curious individual with a passion for learning and growth. My journey is driven by a dedication to personal and professional development, a collaborative spirit, and a commitment to making meaningful contributions in everything I pursue.",
   info: [
     {
       fieldName: "Name",
@@ -55,7 +55,7 @@ const about = {
 const experience = {
   icon: "/assets/resume/badge.svj",
   title: "My experience",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+  description: "My work experience has been a journey of growth and learning, allowing me to develop valuable skills and adapt to diverse challenges. Each role has strengthened my expertise, fostered collaboration, and prepared me to contribute meaningfully in my field with confidence and dedication.",
   items: [
     {
       company: "Donext | Ambalangoda, Southern Province, Sri Lanka",
@@ -95,7 +95,7 @@ const experience = {
 const education = {
   icon: "/assets/resume/cap.svj",
   title: "My education",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+  description: "My educational journey has been one of discovery and growth, providing me with a strong foundation of knowledge and skills. It has prepared me to tackle challenges, pursue my goals, and contribute meaningfully to my field with confidence and determination.",
   items: [
     {
       institution: "MR / Vijitha Central College",
@@ -121,7 +121,7 @@ const education = {
 // skills date
 const skills = {
   title: "My skills",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+  description: "My skills include a blend of technical expertise and problem-solving abilities, complemented by strong communication and adaptability. I am proficient in below skills, with a focus on delivering quality results and continuously refining my capabilities to meet evolving challenges.",
   skillList: [
     {
       icon: <FaHtml5 />,
