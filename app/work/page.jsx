@@ -28,7 +28,7 @@ const projects = [
     description:
       "Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. ",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "JavaScript" }],
-    image: '/assets/work/thumb1.png',
+    image: '/assets/work/thumb1.jpg',
     live: "",
     github: "",
   },
