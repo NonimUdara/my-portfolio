@@ -23,11 +23,11 @@ import Image from "next/image";
 const projects = [
   {
     num: "01",
-    category: "frontend",
+    category: "Vehicle Automotive Spare Parts Sales Platform",
     title: "project 1",
     description:
-      "Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. ",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "JavaScript" }],
+      "This system fosters strong client relationships by offering a user-friendl platform for Sri Lankan citizens to buy and sell genuine spare parts effortlessly. With efficient categorization, a seamless buying experience, and the ability to locate nearby repair centers, it serves as a one-stop solution for automotive needs, catering to both Administrators and Users.",
+    stack: [{ name: "ReactJS" }, { name: "React Native" }, { name: "ExpressJS" }, { name: "NodeJS" }, { name: "MongoDB" }, { name: "GitHub" }, { name: "Microsoft Azure" }],
     image: '/assets/work/thumb1.jpg',
     live: "",
     github: "",
@@ -90,24 +90,22 @@ const Work = () => {
                 {project.num}
               </div>
               {/* project category */}
-              <h2 className="text-[42px] font-bold leading-none text-white 
+              <h2 className="text-[42px] font-bold leading-[1.2] text-white
               group-hover:text-accent transition-all duration-500 capitalize">
-                {project.category} project
+                {project.category}
               </h2>
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
               {/* stack */}
-              <ul className="flex gap-4">
-                {project.stack.map((item, index) => {
-                  return (
-                    <li key={index} className="text-xl text-accent">
-                      {item.name}
-                      {/* remove the last comma */}
-                      {index !== project.stack.length - 1 && ","}
-                    </li>
-                  )
-                })}
+              <ul className="flex flex-wrap gap-x-2 gap-y-1 text-center">
+                {project.stack.map((item, index) => (
+                  <li key={index} className="text-xl text-accent inline">
+                    {item.name}
+                    {index !== project.stack.length - 1 && ","}
+                  </li>
+                ))}
               </ul>
+
               {/* border */}
               <div className="border border-white/60"></div>
               {/* buttons */}
