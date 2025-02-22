@@ -45,11 +45,11 @@ const projects = [
   },
   {
     num: "03",
-    category: "Vehicle Automotive Spare Parts Sales Platform",
-    title: "project 1",
+    category: "Web Application Accident Management System",
+    title: "project 3",
     description:
-      "This system fosters strong client relationships by offering a user-friendl platform for Sri Lankan citizens to buy and sell genuine spare parts effortlessly. With efficient categorization, a seamless buying experience, and the ability to locate nearby repair centers, it serves as a one-stop solution for automotive needs, catering to both Administrators and Users.",
-    stack: [{ name: "ReactJS" }, { name: "React Native" }, { name: "ExpressJS" }, { name: "NodeJS" }, { name: "MongoDB" }, { name: "GitHub" }, { name: "Microsoft Azure" }],
+      "Collaborative web app for Sri Lankan Road Development Authority Police & Insurance Cos. Enables easy driver reporting & tracks accidents. Graphs display accident types causes & frequency for enhanced analysis & safer roads.",
+    stack: [{ name: "ASP.NET with C#" }, { name: "Microsoft SQL Server" }, { name: "Microsoft Azure" }],
     image: '/assets/work/thumb1.jpg',
     live: "",
     github: "",
