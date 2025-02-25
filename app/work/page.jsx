@@ -39,7 +39,7 @@ const projects = [
     description:
       "E-Learning management system for school A/L students with including all functionalities for teachers students and admins.",
     stack: [{ name: "AngularJS" }, { name: "ExpressJS" }, { name: "NodeJS" }, { name: "MongoDB" }, { name: "GitHub" }],
-    image: '/assets/work/thumb3.jpg',
+    image: '/assets/work/thumb31.jpg',
     live: "",
     github: "",
   },
