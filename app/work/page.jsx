@@ -28,7 +28,7 @@ const projects = [
     description:
       "This system fosters strong client relationships by offering a user-friendl platform for Sri Lankan citizens to buy and sell genuine spare parts effortlessly. With efficient categorization, a seamless buying experience, and the ability to locate nearby repair centers, it serves as a one-stop solution for automotive needs, catering to both Administrators and Users.",
     stack: [{ name: "ReactJS" }, { name: "React Native" }, { name: "ExpressJS" }, { name: "NodeJS" }, { name: "MongoDB" }, { name: "GitHub" }, { name: "Microsoft Azure" }],
-    image: '/assets/work/thumb1.jpg',
+    image: '/assets/work/thumb2.jpg',
     live: "",
     github: "",
   },
@@ -39,7 +39,7 @@ const projects = [
     description:
       "E-Learning management system for school A/L students with including all functionalities for teachers students and admins.",
     stack: [{ name: "AngularJS" }, { name: "ExpressJS" }, { name: "NodeJS" }, { name: "MongoDB" }, { name: "GitHub" }],
-    image: '/assets/work/thumb1.jpg',
+    image: '/assets/work/thumb3.jpg',
     live: "",
     github: "",
   },
