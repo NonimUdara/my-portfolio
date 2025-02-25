@@ -39,7 +39,7 @@ const projects = [
     description:
       "E-Learning management system for school A/L students with including all functionalities for teachers students and admins.",
     stack: [{ name: "AngularJS" }, { name: "ExpressJS" }, { name: "NodeJS" }, { name: "MongoDB" }, { name: "GitHub" }],
-    image: '/assets/work/thumb3.jpg',
+    image: '/assets/work/thumb2.jpg',
     live: "",
     github: "",
   },
@@ -50,7 +50,7 @@ const projects = [
     description:
       "Collaborative web app for Sri Lankan Road Development Authority Police & Insurance Cos. Enables easy driver reporting & tracks accidents. Graphs display accident types causes & frequency for enhanced analysis & safer roads.",
     stack: [{ name: "ASP.NET with C#" }, { name: "Microsoft SQL Server" }, { name: "Microsoft Azure" }],
-    image: '/assets/work/thumb1.jpg',
+    image: '/assets/work/thumb2.jpg',
     live: "",
     github: "",
   },
